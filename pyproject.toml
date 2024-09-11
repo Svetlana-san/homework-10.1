@@ -32,6 +32,11 @@ exclude = '''(
                      # в корне проекта
 )
 '''
+[tool.mypy]
+disallow_untyped_defs = true
+warn_return_any = true
+exclude = 'venv'
+
 [tool.isort]
 # максимальная длина строки
 line_length = 119
