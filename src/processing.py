@@ -22,7 +22,7 @@ filtered_list = filter_by_state(list_of_dictionaries)
 print(filtered_list)
 
 
-def sort_by_date(list_of_dictionaries: list[dict[str, Any]], revers: bool = True) -> list[dict[str, Any]]:
+def (list_of_dictionaries: list[dict[str, Any]], revers: bool = True) -> list[dict[str, Any]]:
     """Сортируем список словарей по дате (по возрастанию или убыванию)"""
     sorted_list = sorted(
         list_of_dictionaries, key=lambda x: datetime.strptime(x["date"], "%Y-%m-%dT%H:%M:%S.%f"), reverse=revers
